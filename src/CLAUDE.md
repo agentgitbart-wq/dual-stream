@@ -1,4 +1,4 @@
-# DualStream Video Player - Source Code Architecture
+﻿# DualStream Video Player - Source Code Architecture
 
 This directory contains the complete source code for the DualStream Video Player, a sophisticated dual-video switching application with hardware acceleration and multiple rendering backends.
 
@@ -287,26 +287,26 @@ if (!VideoValidator::ValidateCompatibility(video1Info, video2Info, compatibility
 For detailed implementation information, see the individual subsystem documentation:
 
 ### Core Foundation
-- **[core/CLAUDE.md](core/CLAUDE.md)** - Foundation services (logging, CLI parsing, FFmpeg init)
+- **[core/ARCHITECTURE.md](core/ARCHITECTURE.md)** - Foundation services (logging, CLI parsing, FFmpeg init)
 
 ### User Interface
-- **[ui/CLAUDE.md](ui/CLAUDE.md)** - Comprehensive UI system with Win32 window management, ImGui overlay integration, global input handling, notification system, and camera control UI
+- **[ui/ARCHITECTURE.md](ui/ARCHITECTURE.md)** - Comprehensive UI system with Win32 window management, ImGui overlay integration, global input handling, notification system, and camera control UI
 
 ### Video Processing Pipeline
-- **[video/CLAUDE.md](video/CLAUDE.md)** - Complete video system overview
-- **[video/demux/CLAUDE.md](video/demux/CLAUDE.md)** - Container parsing and packet extraction
-- **[video/decode/CLAUDE.md](video/decode/CLAUDE.md)** - Hardware-accelerated decoding  
-- **[video/switching/CLAUDE.md](video/switching/CLAUDE.md)** - Video switching strategies
-- **[video/triggers/CLAUDE.md](video/triggers/CLAUDE.md)** - Input handling and switching triggers
+- **[video/ARCHITECTURE.md](video/ARCHITECTURE.md)** - Complete video system overview
+- **[video/demux/ARCHITECTURE.md](video/demux/ARCHITECTURE.md)** - Container parsing and packet extraction
+- **[video/decode/ARCHITECTURE.md](video/decode/ARCHITECTURE.md)** - Hardware-accelerated decoding  
+- **[video/switching/ARCHITECTURE.md](video/switching/ARCHITECTURE.md)** - Video switching strategies
+- **[video/triggers/ARCHITECTURE.md](video/triggers/ARCHITECTURE.md)** - Input handling and switching triggers
 
 ### Camera System (Computer Vision Integration)
-- **[camera/CLAUDE.md](camera/CLAUDE.md)** - Complete camera system overview with face detection integration
-- **[camera/sources/CLAUDE.md](camera/sources/CLAUDE.md)** - Camera source abstraction with OpenCV and RealSense support
-- **[camera/processing/CLAUDE.md](camera/processing/CLAUDE.md)** - Multi-threaded frame processing and computer vision integration
-- **[camera/ui/CLAUDE.md](camera/ui/CLAUDE.md)** - Camera control UI system with live preview and property adjustment
+- **[camera/ARCHITECTURE.md](camera/ARCHITECTURE.md)** - Complete camera system overview with face detection integration
+- **[camera/sources/ARCHITECTURE.md](camera/sources/ARCHITECTURE.md)** - Camera source abstraction with OpenCV and RealSense support
+- **[camera/processing/ARCHITECTURE.md](camera/processing/ARCHITECTURE.md)** - Multi-threaded frame processing and computer vision integration
+- **[camera/ui/ARCHITECTURE.md](camera/ui/ARCHITECTURE.md)** - Camera control UI system with live preview and property adjustment
 
 ### Rendering System
-- **[rendering/CLAUDE.md](rendering/CLAUDE.md)** - Multi-backend rendering with hardware acceleration, comprehensive render pass system, and ImGui overlay integration
+- **[rendering/ARCHITECTURE.md](rendering/ARCHITECTURE.md)** - Multi-backend rendering with hardware acceleration, comprehensive render pass system, and ImGui overlay integration
 
 ## Build Configuration
 

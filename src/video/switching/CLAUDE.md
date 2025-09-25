@@ -1,4 +1,4 @@
-# Video Switching System
+﻿# Video Switching System
 
 This directory implements the core video switching architecture using the Strategy pattern, enabling seamless transitions between multiple video streams.
 
@@ -79,7 +79,7 @@ struct PendingSwitchRequest {
 
 ### Experimental Strategies
 **Directory:** `experimental/`
-**Documentation:** [experimental/CLAUDE.md](experimental/CLAUDE.md)
+**Documentation:** [experimental/ARCHITECTURE.md](experimental/ARCHITECTURE.md)
 
 Contains alternative switching approaches:
 - **ImmediateSwitchStrategy** - Default immediate switching

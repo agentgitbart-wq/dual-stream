@@ -1,4 +1,4 @@
-# DirectX 11 Render Pass Implementation
+﻿# DirectX 11 Render Pass Implementation
 
 This directory contains the DirectX 11-specific implementation of the render pass system, providing shader-based post-processing effects with comprehensive resource management.
 
@@ -19,7 +19,7 @@ src/rendering/renderpass/d3d11/
 │   ├── SharpenPass.h/cpp            # Image sharpening
 │   ├── VignettePass.h/cpp           # Vignette darkening effect
 │   └── D3D11OverlayRenderPass.h/cpp # ImGui overlay integration
-└── CLAUDE.md                        # This documentation
+└── ARCHITECTURE.md                        # This documentation
 ```
 
 ## Core Components
@@ -370,6 +370,6 @@ Resource Usage:
 For comprehensive information about individual DirectX 11 render pass effects:
 
 ### Individual Effects
-- **[passes/CLAUDE.md](passes/CLAUDE.md)** - Complete documentation of all DirectX 11 render pass effects including HLSL shader implementations, parameter descriptions, and performance characteristics
+- **[passes/ARCHITECTURE.md](passes/ARCHITECTURE.md)** - Complete documentation of all DirectX 11 render pass effects including HLSL shader implementations, parameter descriptions, and performance characteristics
 
 This DirectX 11 render pass implementation provides high-performance, GPU-accelerated post-processing effects with comprehensive resource management and seamless integration with the render pass pipeline system.

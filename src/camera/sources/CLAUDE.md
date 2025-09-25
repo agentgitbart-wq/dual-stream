@@ -1,4 +1,4 @@
-# Camera Source System
+﻿# Camera Source System
 
 This directory implements the camera source abstraction layer, providing unified access to different camera hardware through a common interface.
 
@@ -12,7 +12,7 @@ src/camera/sources/
 ├── CameraSourceFactory.h/cpp    # Factory for camera source creation
 ├── OpenCVCameraSource.h/cpp     # OpenCV VideoCapture implementation
 ├── RealSenseCameraSource.h/cpp  # Intel RealSense implementation
-└── CLAUDE.md                    # This documentation
+└── ARCHITECTURE.md                    # This documentation
 ```
 
 ## Core Abstraction

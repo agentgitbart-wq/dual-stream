@@ -1,4 +1,4 @@
-# DirectX 11 Render Pass Effects
+﻿# DirectX 11 Render Pass Effects
 
 This directory contains the individual DirectX 11 render pass implementations, providing a comprehensive collection of GPU-accelerated post-processing effects.
 
@@ -14,7 +14,7 @@ src/rendering/renderpass/d3d11/passes/
 ├── SharpenPass.h/cpp            # Image sharpening filter
 ├── VignettePass.h/cpp           # Vignette darkening effect
 ├── D3D11OverlayRenderPass.h/cpp # ImGui overlay integration
-└── CLAUDE.md                    # This documentation
+└── ARCHITECTURE.md                    # This documentation
 ```
 
 ## Effect Implementations

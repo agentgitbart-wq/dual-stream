@@ -1,4 +1,4 @@
-# DualStream Video Player
+﻿# DualStream Video Player
 
 A sophisticated dual-video switching application built for fun and learning advanced C++ programming with [Claude Code](https://claude.ai/code). This project demonstrates hardware-accelerated video processing, multiple rendering backends, and clean software architecture patterns.
 
@@ -121,11 +121,11 @@ The application uses modern C++ design patterns including:
 
 Each component has detailed technical documentation:
 
-- [Source Code Overview](src/CLAUDE.md)
-- [Core Services](src/core/CLAUDE.md)
-- [Video Processing](src/video/CLAUDE.md)
-- [Rendering System](src/rendering/CLAUDE.md)
-- [UI System](src/ui/CLAUDE.md)
+- [Source Code Overview](src/ARCHITECTURE.md)
+- [Core Services](src/core/ARCHITECTURE.md)
+- [Video Processing](src/video/ARCHITECTURE.md)
+- [Rendering System](src/rendering/ARCHITECTURE.md)
+- [UI System](src/ui/ARCHITECTURE.md)
 
 ## 🎓 Learning Outcomes
 

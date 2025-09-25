@@ -1,4 +1,4 @@
-# Render Pass System
+﻿# Render Pass System
 
 This directory implements a configurable render pass pipeline system for post-processing effects in the DirectX 11 renderer. The system provides a flexible architecture for chaining multiple graphics effects while maintaining high performance.
 
@@ -346,11 +346,11 @@ shader = Passthrough
 For comprehensive technical information about each render pass backend:
 
 ### DirectX 11 Implementation
-- **[d3d11/CLAUDE.md](d3d11/CLAUDE.md)** - DirectX 11 render pass implementation with HLSL shaders and resource management
-- **[d3d11/passes/CLAUDE.md](d3d11/passes/CLAUDE.md)** - Individual DirectX 11 effect implementations and HLSL shader details
+- **[d3d11/ARCHITECTURE.md](d3d11/ARCHITECTURE.md)** - DirectX 11 render pass implementation with HLSL shaders and resource management
+- **[d3d11/passes/ARCHITECTURE.md](d3d11/passes/ARCHITECTURE.md)** - Individual DirectX 11 effect implementations and HLSL shader details
 
 ### OpenGL Implementation  
-- **[opengl/CLAUDE.md](opengl/CLAUDE.md)** - OpenGL render pass implementation with GLSL shaders and CUDA interoperability
-- **[opengl/passes/CLAUDE.md](opengl/passes/CLAUDE.md)** - Individual OpenGL effect implementations and GLSL shader details
+- **[opengl/ARCHITECTURE.md](opengl/ARCHITECTURE.md)** - OpenGL render pass implementation with GLSL shaders and CUDA interoperability
+- **[opengl/passes/ARCHITECTURE.md](opengl/passes/ARCHITECTURE.md)** - Individual OpenGL effect implementations and GLSL shader details
 
 This render pass system provides a solid foundation for advanced post-processing effects while maintaining the performance and reliability of the existing video player architecture.

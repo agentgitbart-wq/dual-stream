@@ -1,4 +1,4 @@
-# Camera UI System
+﻿# Camera UI System
 
 This directory implements ImGui-based user interface components for camera control and frame preview integration with the existing UI system.
 
@@ -10,7 +10,7 @@ The camera UI system provides runtime camera control and live frame preview thro
 src/camera/ui/
 ├── CameraControlUI.h/cpp        # Main UI component for camera control
 ├── CameraFrameTexture.h/cpp     # Frame-to-texture conversion for ImGui display
-└── CLAUDE.md                    # This documentation
+└── ARCHITECTURE.md                    # This documentation
 ```
 
 ## Core Components

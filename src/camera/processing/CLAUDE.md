@@ -1,4 +1,4 @@
-# Camera Frame Processing System
+﻿# Camera Frame Processing System
 
 This directory implements the frame processing and delivery infrastructure for the camera system, providing per-listener thread pools and computer vision integration with complete isolation between listeners.
 
@@ -13,7 +13,7 @@ src/camera/processing/
 ├── ListenerProcessor.h/cpp          # Per-listener processing engine
 ├── CameraFramePublisher.h/cpp       # Per-listener frame distribution
 ├── FaceDetectionSwitchingTrigger.h/cpp # Face detection integration
-└── CLAUDE.md                        # This documentation
+└── ARCHITECTURE.md                        # This documentation
 ```
 
 ## Core Components

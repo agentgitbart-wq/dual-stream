@@ -1,4 +1,4 @@
-# Video Processing System
+﻿# Video Processing System
 
 This directory contains the complete video processing pipeline, from container parsing through hardware-accelerated decoding to intelligent switching between multiple video streams.
 
@@ -72,7 +72,7 @@ struct VideoStream {
 ## Subsystem Integration
 
 ### Container Parsing → Decoding
-**Directory:** [demux/CLAUDE.md](demux/CLAUDE.md)
+**Directory:** [demux/ARCHITECTURE.md](demux/ARCHITECTURE.md)
 ```cpp
 // VideoManager initialization flow
 VideoStream& stream = m_videos[0];
@@ -90,7 +90,7 @@ stream.duration = stream.demuxer.GetDuration();
 ```
 
 ### Decoding → Switching  
-**Directory:** [decode/CLAUDE.md](decode/CLAUDE.md) → [switching/CLAUDE.md](switching/CLAUDE.md)
+**Directory:** [decode/ARCHITECTURE.md](decode/ARCHITECTURE.md) → [switching/ARCHITECTURE.md](switching/ARCHITECTURE.md)
 ```cpp
 // Switching strategies coordinate with decoders
 bool VideoSwitchingStrategy::UpdateFrame() {
@@ -112,7 +112,7 @@ bool VideoSwitchingStrategy::UpdateFrame() {
 ```
 
 ### Trigger → Switching
-**Directory:** [triggers/CLAUDE.md](triggers/CLAUDE.md) → [switching/CLAUDE.md](switching/CLAUDE.md)
+**Directory:** [triggers/ARCHITECTURE.md](triggers/ARCHITECTURE.md) → [switching/ARCHITECTURE.md](switching/ARCHITECTURE.md)
 ```cpp
 // Main application loop coordination
 while (window.ProcessMessages()) {
@@ -249,9 +249,9 @@ bool VideoManager::UpdateFrame() {
 
 For detailed implementation information, see the individual subsystem documentation:
 
-- **[demux/CLAUDE.md](demux/CLAUDE.md)** - Container parsing and packet extraction
-- **[decode/CLAUDE.md](decode/CLAUDE.md)** - Hardware-accelerated decoding system  
-- **[switching/CLAUDE.md](switching/CLAUDE.md)** - Video switching strategies and algorithms
-- **[triggers/CLAUDE.md](triggers/CLAUDE.md)** - Input handling and switching triggers
+- **[demux/ARCHITECTURE.md](demux/ARCHITECTURE.md)** - Container parsing and packet extraction
+- **[decode/ARCHITECTURE.md](decode/ARCHITECTURE.md)** - Hardware-accelerated decoding system  
+- **[switching/ARCHITECTURE.md](switching/ARCHITECTURE.md)** - Video switching strategies and algorithms
+- **[triggers/ARCHITECTURE.md](triggers/ARCHITECTURE.md)** - Input handling and switching triggers
 
 Each subsystem is designed for independence and testability, with clear interfaces enabling easy extension and modification of video processing behavior.

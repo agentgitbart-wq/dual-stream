@@ -1,4 +1,4 @@
-# Rendering System
+﻿# Rendering System
 
 This directory implements a dual-backend rendering system supporting both DirectX 11 and OpenGL, with hardware acceleration and format conversion capabilities.
 
@@ -45,8 +45,8 @@ src/rendering/
 │   │       ├── SharpenPass.h/cpp            # OpenGL sharpening
 │   │       ├── VignettePass.h/cpp           # OpenGL vignette
 │   │       └── OpenGLOverlayRenderPass.h/cpp # OpenGL ImGui overlays
-│   └── CLAUDE.md                   # Render pass system documentation
-└── CLAUDE.md                       # This documentation
+│   └── ARCHITECTURE.md                   # Render pass system documentation
+└── ARCHITECTURE.md                       # This documentation
 ```
 
 ## Core Abstraction Layer
@@ -458,7 +458,7 @@ strength = 0.5
 - **Resource Pooling:** Automatic texture reuse and memory management
 - **Bypass Support:** Direct passthrough when pipeline is disabled
 
-For detailed information about the render pass system, see **[renderpass/CLAUDE.md](renderpass/CLAUDE.md)**
+For detailed information about the render pass system, see **[renderpass/ARCHITECTURE.md](renderpass/ARCHITECTURE.md)**
 
 ## Camera Frame Texture Support
 

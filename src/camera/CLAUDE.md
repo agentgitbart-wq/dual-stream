@@ -1,4 +1,4 @@
-# Camera Frame Delivery System
+﻿# Camera Frame Delivery System
 
 This directory implements a comprehensive camera frame delivery module designed for computer vision processing tasks, specifically optimized for face detection and video switching integration.
 
@@ -15,17 +15,17 @@ src/camera/
 │   ├── CameraSourceFactory.h/cpp        # Factory pattern for camera creation
 │   ├── OpenCVCameraSource.h/cpp         # OpenCV VideoCapture implementation
 │   ├── RealSenseCameraSource.h/cpp      # Intel RealSense implementation
-│   └── CLAUDE.md                        # Camera source system documentation
+│   └── ARCHITECTURE.md                        # Camera source system documentation
 ├── processing/                          # Frame processing and delivery
 │   ├── ICameraFrameListener.h           # Interface for frame consumers
 │   ├── CameraFramePublisher.h/cpp       # Multi-threaded frame distribution
 │   ├── FaceDetectionSwitchingTrigger.h/cpp # Example CV processing integration
-│   └── CLAUDE.md                        # Frame processing system documentation
+│   └── ARCHITECTURE.md                        # Frame processing system documentation
 ├── ui/                                  # Camera control UI components
 │   ├── CameraControlUI.h/cpp            # ImGui-based camera control interface
 │   ├── CameraFrameTexture.h/cpp         # Camera frame-to-texture conversion for UI
-│   └── CLAUDE.md                        # Camera UI system documentation
-└── CLAUDE.md                           # This documentation
+│   └── ARCHITECTURE.md                        # Camera UI system documentation
+└── ARCHITECTURE.md                           # This documentation
 ```
 
 ## Core Design Principles
@@ -347,12 +347,12 @@ add_definitions(-DHAVE_CAMERA_UI=1)   # Camera UI always available with ImGui
 For comprehensive technical information about each camera subsystem:
 
 ### Camera Source System
-- **[sources/CLAUDE.md](sources/CLAUDE.md)** - Camera source abstraction, device enumeration, OpenCV and RealSense implementations, normalized property control system
+- **[sources/ARCHITECTURE.md](sources/ARCHITECTURE.md)** - Camera source abstraction, device enumeration, OpenCV and RealSense implementations, normalized property control system
 
 ### Frame Processing System
-- **[processing/CLAUDE.md](processing/CLAUDE.md)** - Multi-threaded frame distribution, computer vision integration, face detection switching
+- **[processing/ARCHITECTURE.md](processing/ARCHITECTURE.md)** - Multi-threaded frame distribution, computer vision integration, face detection switching
 
 ### Camera UI System
-- **[ui/CLAUDE.md](ui/CLAUDE.md)** - ImGui-based camera control interface, live preview system, multi-backend frame texture conversion
+- **[ui/ARCHITECTURE.md](ui/ARCHITECTURE.md)** - ImGui-based camera control interface, live preview system, multi-backend frame texture conversion
 
 This camera system provides a robust foundation for computer vision integration while maintaining consistency with the existing video player architecture and protecting the main rendering thread performance.

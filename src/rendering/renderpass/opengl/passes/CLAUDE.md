@@ -1,4 +1,4 @@
-# OpenGL Render Pass Effects
+﻿# OpenGL Render Pass Effects
 
 This directory contains the individual OpenGL render pass implementations, providing a comprehensive collection of GLSL-based post-processing effects with feature parity to the DirectX 11 implementations.
 
@@ -14,7 +14,7 @@ src/rendering/renderpass/opengl/passes/
 ├── SharpenPass.h/cpp              # Image sharpening filter
 ├── VignettePass.h/cpp             # Vignette darkening effect
 ├── OpenGLOverlayRenderPass.h/cpp  # ImGui overlay integration
-└── CLAUDE.md                      # This documentation
+└── ARCHITECTURE.md                      # This documentation
 ```
 
 ## GLSL Shader Implementations

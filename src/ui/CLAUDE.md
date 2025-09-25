@@ -1,4 +1,4 @@
-# User Interface System
+﻿# User Interface System
 
 This directory implements a comprehensive user interface system combining Win32 window management with ImGui-based overlay functionality for modern UI elements, notifications, and debug information.
 
@@ -15,7 +15,7 @@ src/ui/
 ├── UIRegistry.h/cpp                # UI component registration system
 ├── NotificationManager.h/cpp       # Toast notification system
 ├── IUIDrawable.h                   # Interface for UI components
-└── CLAUDE.md                       # This documentation
+└── ARCHITECTURE.md                       # This documentation
 ```
 
 ## Core Components

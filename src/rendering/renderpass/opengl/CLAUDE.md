@@ -1,4 +1,4 @@
-# OpenGL Render Pass Implementation
+﻿# OpenGL Render Pass Implementation
 
 This directory contains the OpenGL-specific implementation of the render pass system, providing GLSL shader-based post-processing effects with comprehensive resource management and CUDA interoperability.
 
@@ -20,7 +20,7 @@ src/rendering/renderpass/opengl/
 │   ├── SharpenPass.h/cpp               # Image sharpening
 │   ├── VignettePass.h/cpp              # Vignette darkening effect
 │   └── OpenGLOverlayRenderPass.h/cpp   # ImGui overlay integration
-└── CLAUDE.md                           # This documentation
+└── ARCHITECTURE.md                           # This documentation
 ```
 
 ## Core Components
@@ -388,6 +388,6 @@ glEndQuery(GL_TIME_ELAPSED);
 For comprehensive information about individual OpenGL render pass effects:
 
 ### Individual Effects
-- **[passes/CLAUDE.md](passes/CLAUDE.md)** - Complete documentation of all OpenGL render pass effects including GLSL shader implementations, parameter descriptions, and performance characteristics
+- **[passes/ARCHITECTURE.md](passes/ARCHITECTURE.md)** - Complete documentation of all OpenGL render pass effects including GLSL shader implementations, parameter descriptions, and performance characteristics
 
 This OpenGL render pass implementation provides high-performance, cross-platform post-processing effects with excellent CUDA interoperability and comprehensive resource management, maintaining feature parity with the DirectX 11 implementation while leveraging OpenGL-specific optimizations.
