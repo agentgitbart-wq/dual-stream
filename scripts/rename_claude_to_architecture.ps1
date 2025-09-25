@@ -1,12 +1,12 @@
-# Script to rename all CLAUDE.md files to ARCHITECTURE.md and update references
+﻿# Script to rename all tooling.md files to ARCHITECTURE.md and update references
 # It commits and pushes changes on the current branch.
 
 $ErrorActionPreference = 'Stop'
 
-Write-Host "Searching for CLAUDE.md files..."
-$files = Get-ChildItem -Path . -Recurse -Filter 'CLAUDE.md' -File -Force -ErrorAction SilentlyContinue
+Write-Host "Searching for tooling.md files..."
+$files = Get-ChildItem -Path . -Recurse -Filter 'tooling.md' -File -Force -ErrorAction SilentlyContinue
 if (-not $files) {
-    Write-Host "No CLAUDE.md files found. Exiting."
+    Write-Host "No tooling.md files found. Exiting."
     exit 0
 }
 
@@ -17,7 +17,7 @@ foreach ($f in $files) {
     git mv -f -- "$old" "$new"
 }
 
-# Replace textual references to CLAUDE.md in common text/source files
+# Replace textual references to tooling.md in common text/source files
 $exts = @('.md','.txt','.mdown','.markdown','.json','.cpp','.h','.hpp','.c','.cc','.cs','.py','.cmake','.yml','.yaml','.ini')
 $filesToEdit = Get-ChildItem -Path . -Recurse -File -Force | Where-Object { ($exts -contains $_.Extension.ToLower()) -and ($_.FullName -notmatch '\\.git\\') }
 
@@ -44,7 +44,7 @@ git add -A
 $branch = (git rev-parse --abbrev-ref HEAD).Trim()
 Write-Host "Current branch: $branch"
 try {
-    git commit -m "chore: replace CLAUDE.md with ARCHITECTURE.md and update references"
+    git commit -m "chore: replace tooling.md with ARCHITECTURE.md and update references"
 } catch {
     Write-Host "Nothing to commit or commit failed: $_"
 }
@@ -53,3 +53,4 @@ Write-Host "Pushing branch..."
 git push -u origin $branch
 
 Write-Host "Done."
+

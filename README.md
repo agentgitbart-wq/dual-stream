@@ -158,7 +158,7 @@ This project provided hands-on experience with:
 ### Development Tools
 - CMake build systems
 - Cross-platform development
-- AI-assisted programming
+- assisted programming
 - Documentation-driven development
 
 ## 📝 License
@@ -168,3 +168,4 @@ This is a personal learning project created for educational purposes. Feel free 
 ---
 
 *Built with curiosity* 🚀
+

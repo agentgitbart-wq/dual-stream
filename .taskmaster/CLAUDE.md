@@ -45,11 +45,11 @@ task-master generate                                         # Update task markd
 - `.taskmaster/tasks/*.txt` - Individual task files (auto-generated from tasks.json)
 - `.env` - API keys for CLI usage
 
-### Claude Code Integration Files
+### tooling Code Integration Files
 
-- `ARCHITECTURE.md` - Auto-loaded context for Claude Code (this file)
-- `.claude/settings.json` - Claude Code tool allowlist and preferences
-- `.claude/commands/` - Custom slash commands for repeated workflows
+- `ARCHITECTURE.md` - Auto-loaded context for tooling Code (this file)
+- `.tooling/settings.json` - tooling Code tool allowlist and preferences
+- `.tooling/commands/` - Custom slash commands for repeated workflows
 - `.mcp.json` - MCP server configuration (project-specific)
 
 ### Directory Structure
@@ -68,17 +68,17 @@ project/
 │   ├── templates/         # Template files
 │   │   └── example_prd.txt  # Example PRD template
 │   └── config.json        # AI models & settings
-├── .claude/
-│   ├── settings.json      # Claude Code configuration
+├── .tooling/
+│   ├── settings.json      # tooling Code configuration
 │   └── commands/         # Custom slash commands
 ├── .env                  # API keys
 ├── .mcp.json            # MCP configuration
-└── ARCHITECTURE.md            # This file - auto-loaded by Claude Code
+└── ARCHITECTURE.md            # This file - auto-loaded by tooling Code
 ```
 
 ## MCP Integration
 
-Task Master provides an MCP server that Claude Code can connect to. Configure in `.mcp.json`:
+Task Master provides an MCP server that tooling Code can connect to. Configure in `.mcp.json`:
 
 ```json
 {
@@ -128,7 +128,7 @@ analyze_project_complexity; // = task-master analyze-complexity
 complexity_report; // = task-master complexity-report
 ```
 
-## Claude Code Workflow Integration
+## tooling Code Workflow Integration
 
 ### Standard Development Workflow
 
@@ -162,24 +162,24 @@ task-master update-subtask --id=<id> --prompt="implementation notes..."
 task-master set-status --id=<id> --status=done
 ```
 
-#### 3. Multi-Claude Workflows
+#### 3. Multi-tooling Workflows
 
-For complex projects, use multiple Claude Code sessions:
+For complex projects, use multiple tooling Code sessions:
 
 ```bash
 # Terminal 1: Main implementation
-cd project && claude
+cd project && tooling
 
 # Terminal 2: Testing and validation
-cd project-test-worktree && claude
+cd project-test-worktree && tooling
 
 # Terminal 3: Documentation updates
-cd project-docs-worktree && claude
+cd project-docs-worktree && tooling
 ```
 
 ### Custom Slash Commands
 
-Create `.claude/commands/taskmaster-next.md`:
+Create `.tooling/commands/taskmaster-next.md`:
 
 ```markdown
 Find the next available Task Master task and show its details.
@@ -192,7 +192,7 @@ Steps:
 4. Suggest the first implementation step
 ```
 
-Create `.claude/commands/taskmaster-complete.md`:
+Create `.tooling/commands/taskmaster-complete.md`:
 
 ```markdown
 Complete a Task Master task: $ARGUMENTS
@@ -208,7 +208,7 @@ Steps:
 
 ## Tool Allowlist Recommendations
 
-Add to `.claude/settings.json`:
+Add to `.tooling/settings.json`:
 
 ```json
 {
@@ -229,9 +229,9 @@ Add to `.claude/settings.json`:
 
 At least **one** of these API keys must be configured:
 
-- `ANTHROPIC_API_KEY` (Claude models) - **Recommended**
+- `ANTHROPIC_API_KEY` (tooling models) - **Recommended**
 - `PERPLEXITY_API_KEY` (Research features) - **Highly recommended**
-- `OPENAI_API_KEY` (GPT models)
+- `OPENAI_API_KEY` (toolingmodels)
 - `GOOGLE_API_KEY` (Gemini models)
 - `MISTRAL_API_KEY` (Mistral models)
 - `OPENROUTER_API_KEY` (Multiple models)
@@ -246,9 +246,9 @@ An API key is required for any provider used across any of the 3 roles defined i
 task-master models --setup
 
 # Set specific models
-task-master models --set-main claude-3-5-sonnet-20241022
+task-master models --set-main tooling-3-5-sonnet-20241022
 task-master models --set-research perplexity-llama-3.1-sonar-large-128k-online
-task-master models --set-fallback gpt-4o-mini
+task-master models --set-fallback tooling4o-mini
 ```
 
 ## Task Structure & IDs
@@ -284,7 +284,7 @@ task-master models --set-fallback gpt-4o-mini
 }
 ```
 
-## Claude Code Best Practices with Task Master
+## tooling Code Best Practices with Task Master
 
 ### Context Management
 
@@ -331,9 +331,9 @@ git commit -m "feat: implement JWT auth (task 1.2)"
 git worktree add ../project-auth feature/auth-system
 git worktree add ../project-api feature/api-refactor
 
-# Run Claude Code in each worktree
-cd ../project-auth && claude    # Terminal 1: Auth work
-cd ../project-api && claude     # Terminal 2: API work
+# Run tooling Code in each worktree
+cd ../project-auth && tooling    # Terminal 1: Auth work
+cd ../project-api && tooling     # Terminal 2: API work
 ```
 
 ## Troubleshooting
@@ -348,14 +348,14 @@ cat .env                           # For CLI usage
 task-master models
 
 # Test with different model
-task-master models --set-fallback gpt-4o-mini
+task-master models --set-fallback tooling4o-mini
 ```
 
 ### MCP Connection Issues
 
 - Check `.mcp.json` configuration
 - Verify Node.js installation
-- Use `--mcp-debug` flag when starting Claude Code
+- Use `--mcp-debug` flag when starting tooling Code
 - Use CLI as fallback if MCP unavailable
 
 ### Task File Sync Issues
@@ -392,12 +392,12 @@ These commands make AI calls and may take up to a minute:
 - Task markdown files in `tasks/` are auto-generated
 - Run `task-master generate` after manual changes to tasks.json
 
-### Claude Code Session Management
+### tooling Code Session Management
 
 - Use `/clear` frequently to maintain focused context
 - Create custom slash commands for repeated Task Master workflows
 - Configure tool allowlist to streamline permissions
-- Use headless mode for automation: `claude -p "task-master next"`
+- Use headless mode for automation: `tooling -p "task-master next"`
 
 ### Multi-Task Updates
 
@@ -414,5 +414,6 @@ These commands make AI calls and may take up to a minute:
 
 ---
 
-_This guide ensures Claude Code has immediate access to Task Master's essential functionality for agentic development workflows._
+_This guide ensures tooling Code has immediate access to Task Master's essential functionality for agentic development workflows._
+
 
