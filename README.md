@@ -1,6 +1,6 @@
 ﻿# DualStream Video Player
 
-A sophisticated dual-video switching application built for fun and learning advanced C++ programming with [Claude Code](https://claude.ai/code). This project demonstrates hardware-accelerated video processing, multiple rendering backends, and clean software architecture patterns.
+A sophisticated dual-video switching application built for fun and learning advanced C++ programming. This project demonstrates hardware-accelerated video processing, multiple rendering backends, and clean software architecture patterns.
 
 ## 🎯 Project Purpose
 
@@ -10,7 +10,7 @@ This application was developed as a learning exercise to explore:
 - Hardware acceleration (NVIDIA NVDEC, DirectX, CUDA)
 - Modern graphics APIs (DirectX 11, OpenGL 4.6)
 - Clean architecture and design patterns
-- AI-assisted development with Claude Code
+- Assisted development and tool support
 
 ## ✨ Features
 
@@ -161,22 +161,10 @@ This project provided hands-on experience with:
 - AI-assisted programming
 - Documentation-driven development
 
-## 🤖 Built with Claude Code
-
-This project was developed using [Claude Code](https://claude.ai/code), Anthropic's AI coding assistant. The AI helped with:
-
-- Architecture design and code reviews
-- Complex FFmpeg integration
-- Hardware acceleration implementation
-- Cross-platform compatibility
-- Comprehensive documentation
-
-The experience demonstrates how AI can accelerate learning and enable building sophisticated applications that would typically require years of domain expertise.
-
 ## 📝 License
 
 This is a personal learning project created for educational purposes. Feel free to use it as a reference for your own multimedia programming journey!
 
 ---
 
-*Built with curiosity, powered by Claude Code* 🚀
+*Built with curiosity* 🚀
